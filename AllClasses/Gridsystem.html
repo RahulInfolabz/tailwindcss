@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Introduction</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="font-mono">
+    <div class="grid lg:grid-cols-[17%_auto] h-[100vh] overflow-x-hidden">
+        <!-- Sidebar -->
+        <div class="bg-blue-700 min-h-[100vh] overflow-y-scroll text-white font-serif hidden lg:block">
+            <div class="logo pt-5 font-mono text-center">
+                <h1 class="text-2xl font-bold">Tailwind CSS Cheatsheet</h1>
+            </div>
+            <hr class="bg-black mt-3">
+            <ul class="p-5 font-mono">
+                <li class="text-[18px]"><a href="index.html">Introduction</a></li>
+                <li class="text-[18px]"><a href="utility.html">Utility</a></li>
+                <li class="text-[18px]"><a href="width.html">Width</a></li>
+                <li class="text-[18px]"><a href="height.html">Height</a></li>
+                <li class="text-[18px]"><a href="margin.html">Margin</a></li>
+                <li class="text-[18px]"><a href="padding.html">Padding</a></li>
+                <li class="text-[18px]"><a href="maxwidth.html">Max Width</a></li>
+                <li class="text-[18px]"><a href="minwidth.html">Min Width</a></li>
+                <li class="text-[18px]"><a href="maxheight.html">Max Height</a></li>
+                
+                <li class="text-[18px]"><a href="screens.html">Screens</a></li>
+                <li class="text-[18px]"><a href="Gridsystem.html">Grid System</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="min-h-[100vh] p-5 overflow-y-scroll">
+            <h1 class="md:text-4xl text-2xl font-bold text-blue-700 mb-4">Tailwind CSS Grid System</h1>
+
+            <!-- About grid system  -->
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <div class="mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-3">What are Grid System In Tailwind CSS?</h2>
+                    <p class="md:text-xl mb-4">
+                        The Grid System in Tailwind CSS is a utility-based approach to building responsive, structured
+                        layouts using CSS grid. Tailwind provides a set of utility classes to define grid containers,
+                        control rows and columns, and customize layout properties like alignment, spacing, and
+                        responsiveness.
+                    </p>
+                </div>
+
+                <div class="my-12">
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-3">Grid Classes in Tailwind CSS</h2>
+                    <div class="overflow-x-auto">
+
+                        <table class="table-auto w-full bg-white border border-gray-300 rounded-lg">
+                            <thead>
+                                <tr class="bg-gray-200">
+                                    <th class="px-4 py-2 text-left font-bold text-gray-700 border-b border-gray-300">
+                                        Class</th>
+                                    <th class="px-4 py-2 text-left font-bold text-gray-700 border-b border-gray-300">
+                                        Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="px-4 py-2 border-b border-gray-300">grid</td>
+                                    <td class="px-4 py-2 border-b border-gray-300">Defines a grid container.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 border-b border-gray-300">grid-cols-{n}</td>
+                                    <td class="px-4 py-2 border-b border-gray-300">Sets the number of columns.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 border-b border-gray-300">col-span-{n}</td>
+                                    <td class="px-4 py-2 border-b border-gray-300">Defines how many columns an Box
+                                        spans.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 border-b border-gray-300">gap-{n}</td>
+                                    <td class="px-4 py-2 border-b border-gray-300">Adds space between rows and
+                                        columns.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 border-b border-gray-300">grid-rows-{n}</td>
+                                    <td class="px-4 py-2 border-b border-gray-300">Sets the number of rows.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 border-b border-gray-300">justify-*</td>
+                                    <td class="px-4 py-2 border-b border-gray-300">Aligns Boxs horizontally.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">Boxs-*</td>
+                                    <td class="px-4 py-2">Aligns Boxs vertically.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Of Constructing Grid System -->
+            <div class="bg-white p-5 my-12 shadow-2xl overflow-x-auto">
+                <!-- Grid Class -->
+                <h2 class="text-2xl font-semibold text-gray-700 mb-3">1. Grid </h2>
+                <p class="md:text-xl">To create a grid container, you use the grid class</p>
+                <p class="text-xl mt-4">Syntax : <span class="font-semibold">grid</span></p>
+
+                <div class="mt-7">
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="grid bg-blue-300 p-5 mx-auto"&gt;
+    &lt;h1&gt; Grid Container &lt;/h1&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container grid bg-blue-300 p-5 mx-auto">
+                        <h1>Grid Container</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Column Classes  -->
+            <div class="overflow-x-auto mt-10 p-5 bg-white shadow-2xl">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-3">2. Grid Column Classes</h2>
+                <p class="text-xl">To create a grid layout, you can use the grid column classes</p>
+                <p class="text-xl mt-4">Syntax : <span class="font-extrabold">grid-cols-{n} </span> </p>
+                <p class="text-xl mt-4">here n number range can be (1-12)</p>
+                <!-- 1 column layout -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline"> Single Column Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-1 "&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt;
+        &lt;h1&gt;Box 1&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-1 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 column layout -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Two Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-2"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt;
+        &lt;h1&gt;Box 1&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt;
+        &lt;h1&gt;Box 2&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-2 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!--3 columns -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Three Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-3"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-3 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 columns -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Four Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-4"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-4 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 columns -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Five Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-5"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 5&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-5 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 5</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 6 columns -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Six Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-6"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 5&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 6&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-6 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 5</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 6</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 7 columns -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Seven Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-7"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 5&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 6&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 7&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-7 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 5</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 6</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 7</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 8 columns -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Eight Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-8"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 5&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 6&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 7&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 8&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-8 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 5</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 6</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 7</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 8</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9 columns -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Nine Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-9"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 5&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 6&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 7&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 8&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 9&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-9 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 5</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 6</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 7</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 8</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 9</h1>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- 10 column -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Ten Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-10"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 5&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 6&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 7&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 8&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 9&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 10&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-10 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 5</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 6</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 7</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 8</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 9</h1>
+                        </div>
+
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 10</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 11 columns -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Eleven Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-11"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 5&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 6&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 7&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 8&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 9&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 10&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 11&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-11 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 5</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 6</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 7</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 8</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 9</h1>
+                        </div>
+
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 10</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 11</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 12 columns -->
+                <div class="my-10 pb-5">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Twelve Columns Layout</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-12"&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 1&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 2&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 3&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 4&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 5&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 6&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 7&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 8&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 9&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 10&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 11&lt;/h1&gt; &lt;/div&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt; &lt;h1&gt;Box 12&lt;/h1&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-12 bg-blue-300 p-5">
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 3</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 4</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 5</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 6</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 7</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 8</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 9</h1>
+                        </div>
+
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 10</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 11</h1>
+                        </div>
+
+                        <div class="border-2 border-black min-h-[200px] my-5">
+                            <h1>Box 12</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col Span Classes  -->
+            <div class="overflow-x-auto mt-10 p-5 bg-white shadow-2xl">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-3">3. Grid Column Classes</h2>
+                <!-- <p class="text-xl">To create a grid Boxs, you use the grid column classes</p>
+                    <p class="text-xl mt-4">Syntax : <span class="font-semibold">grid-col-{n} </span> here n number
+                        range can be (1-12)</p> -->
+
+                <!-- 1 column layout -->
+                <div class="my-10 border-b-2 border-black pb-10">
+                    <p class="text-xl text-slate-700 font-extrabold my-5 underline">Custom Column Spaces To Individual
+                        Item</p>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="container mx-auto grid grid-cols-4 "&gt;
+    &lt;div class="border-2 border-black min-h-[200px] my-5"&gt;
+        &lt;h1&gt;Box 1&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div class="container mx-auto grid grid-cols-12 bg-blue-300 p-5">
+                        <div class="border-2 col-span-8 border-black min-h-[200px] my-5">
+                            <h1>Box 1</h1>
+                        </div>
+
+                        <div class="border-2 col-span-4  border-black min-h-[200px] my-5">
+                            <h1>Box 2</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

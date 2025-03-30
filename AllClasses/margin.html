@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="font-mono">
+    <div class="grid lg:grid-cols-[17%_auto] h-[100vh] overflow-x-hidden ">
+        <div class="bg-blue-700 min-h-[100vh] overflow-y-scroll text-white font-serif hidden lg:block">
+
+            <div class="logo pt-5  font-mono text-center">
+                <h1 class="md:text-2xl text-xl font-bold">Tailwind CSS Cheetsheet</h1>
+            </div>
+            <hr class="bg-black mt-3">
+                        <ul class="p-5 font-mono">
+                <li class="text-[18px]"><a href="index.html">Introduction</a></li>
+                <li class="text-[18px]"><a href="utility.html">Utility</a></li>
+                <li class="text-[18px]"><a href="width.html">Width</a></li>
+                <li class="text-[18px]"><a href="height.html">Height</a></li>
+                <li class="text-[18px]"><a href="margin.html">Margin</a></li>
+                <li class="text-[18px]"><a href="padding.html">Padding</a></li>
+                <li class="text-[18px]"><a href="maxwidth.html">Max Width</a></li>
+                <li class="text-[18px]"><a href="minwidth.html">Min Width</a></li>
+                <li class="text-[18px]"><a href="maxheight.html">Max Height</a></li>
+                
+                <li class="text-[18px]"><a href="screens.html">Screens</a></li>
+                <li class="text-[18px]"><a href="Gridsystem.html">Grid System</a></li>
+            </ul>
+        </div>
+        <div class="min-h-[100vh] p-5 overflow-y-scroll">
+            <!-- Height Classes -->
+            <h1 class="text-4xl font-bold text-blue-700 mb-4">Margin Classes</h1>
+            
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <h1 class="md:text-3xl text-xl mb-8">Basic Margin </h1>
+                <div class="min-h-[50px] text-center bg-blue-300 m-0 border-2 border-black  md:text-2xl text-xl"> 0px =
+                    <span class="font-bold"> m-0</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-1 border-2 border-black  md:text-2xl text-xl"> 4px =
+                    <span class="font-bold"> m-1</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-2 border-2 border-black  md:text-2xl text-xl"> 8px =
+                    <span class="font-bold"> m-2</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-3 border-2 border-black  md:text-2xl text-xl"> 12px =
+                    <span class="font-bold"> m-3</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-4 border-2 border-black  md:text-2xl text-xl"> 16px =
+                    <span class="font-bold"> m-4</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-5 border-2 border-black  md:text-2xl text-xl"> 20px =
+                    <span class="font-bold"> m-5</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-6 border-2 border-black  md:text-2xl text-xl"> 24px =
+                    <span class="font-bold"> m-6</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-7 border-2 border-black  md:text-2xl text-xl"> 28px =
+                    <span class="font-bold"> m-7</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-8 border-2 border-black  md:text-2xl text-xl"> 32px =
+                    <span class="font-bold"> m-8</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-9 border-2 border-black  md:text-2xl text-xl"> 36px =
+                    <span class="font-bold"> m-9</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-10 border-2 border-black  md:text-2xl text-xl"> 40px
+                    = <span class="font-bold"> m-10</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-11 border-2 border-black  md:text-2xl text-xl"> 44px
+                    = <span class="font-bold"> m-11</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-12 border-2 border-black  md:text-2xl text-xl"> 48px
+                    = <span class="font-bold"> m-12</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-14 border-2 border-black  md:text-2xl text-xl"> 56px
+                    = <span class="font-bold"> m-14</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-16 border-2 border-black  md:text-2xl text-xl"> 64px
+                    = <span class="font-bold"> m-16</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-20 border-2 border-black  md:text-2xl text-xl"> 80px
+                    = <span class="font-bold"> m-20</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-24 border-2 border-black  md:text-2xl text-xl"> 96px
+                    = <span class="font-bold"> m-24</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-28 border-2 border-black  md:text-2xl text-xl"> 112px
+                    = <span class="font-bold"> m-28</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-32 border-2 border-black  md:text-2xl text-xl"> 128px
+                    = <span class="font-bold"> m-32</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-36 border-2 border-black  md:text-2xl text-xl"> 144px
+                    = <span class="font-bold"> m-36</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-40 border-2 border-black  md:text-2xl text-xl"> 160px
+                    = <span class="font-bold"> m-40</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-44 border-2 border-black  md:text-2xl text-xl"> 176px
+                    = <span class="font-bold"> m-44</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-48 border-2 border-black  md:text-2xl text-xl"> 192px
+                    = <span class="font-bold"> m-48</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-52 border-2 border-black  md:text-2xl text-xl"> 208px
+                    = <span class="font-bold"> m-52</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-56 border-2 border-black  md:text-2xl text-xl"> 224px
+                    = <span class="font-bold"> m-56</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-60 border-2 border-black  md:text-2xl text-xl"> 240px
+                    = <span class="font-bold"> m-60</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-64 border-2 border-black  md:text-2xl text-xl"> 256px
+                    = <span class="font-bold"> m-64</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-72 border-2 border-black  md:text-2xl text-xl"> 288px
+                    = <span class="font-bold"> m-72</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-80 border-2 border-black  md:text-2xl text-xl"> 320px
+                    = <span class="font-bold"> m-80</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 m-96 border-2 border-black  md:text-2xl text-xl"> 384px
+                    = <span class="font-bold"> m-96</span></div>
+
+                <div class="min-h-[50px] text-center bg-blue-300 m-[50px] border-2 border-black md:text-2xl text-xl">
+                    50px =
+                    <span class="font-bold">m-[50px]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 m-[5rem] border-2 border-black md:text-2xl text-xl">
+                    80px =
+                    <span class="font-bold">m-[5rem]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 m-[10%] border-2 border-black md:text-2xl text-xl">
+                    depends on screen size =
+                    <span class="font-bold">m-[10%]</span>
+                </div>
+
+            </div>
+
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <h1 class="md:text-2xl text-xl mb-5">Margin With Spacific Sides</h1>
+                <h2 class="font-bold mb-5">syntax : m-sideds(t | r | b | l | x | y)-value(0 | 1 | 2 |....|96 ) </h2>
+
+                <div class="min-h-[50px] text-center bg-blue-300 mt-0 border-2 border-black md:text-2xl text-xl"> 0px =
+                    <span class="font-bold">mt-0</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-0.5 border-2 border-black md:text-2xl text-xl"> 2px
+                    = <span class="font-bold">mt-0.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-1 border-2 border-black md:text-2xl text-xl"> 4px =
+                    <span class="font-bold">mt-1</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-1.5 border-2 border-black md:text-2xl text-xl"> 6px
+                    = <span class="font-bold">mt-1.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-2 border-2 border-black md:text-2xl text-xl"> 8px =
+                    <span class="font-bold">mt-2</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-2.5 border-2 border-black md:text-2xl text-xl"> 10px
+                    = <span class="font-bold">mt-2.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-3 border-2 border-black md:text-2xl text-xl"> 12px =
+                    <span class="font-bold">mt-3</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-3.5 border-2 border-black md:text-2xl text-xl"> 14px
+                    = <span class="font-bold">mt-3.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-4 border-2 border-black md:text-2xl text-xl"> 16px =
+                    <span class="font-bold">mt-4</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-5 border-2 border-black md:text-2xl text-xl"> 20px =
+                    <span class="font-bold">mt-5</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-6 border-2 border-black md:text-2xl text-xl"> 24px =
+                    <span class="font-bold">mt-6</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-7 border-2 border-black md:text-2xl text-xl"> 28px =
+                    <span class="font-bold">mt-7</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-8 border-2 border-black md:text-2xl text-xl"> 32px =
+                    <span class="font-bold">mt-8</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-9 border-2 border-black md:text-2xl text-xl"> 36px =
+                    <span class="font-bold">mt-9</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-10 border-2 border-black md:text-2xl text-xl"> 40px
+                    = <span class="font-bold">mt-10</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-11 border-2 border-black md:text-2xl text-xl"> 44px
+                    = <span class="font-bold">mt-11</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-12 border-2 border-black md:text-2xl text-xl"> 48px
+                    = <span class="font-bold">mt-12</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-14 border-2 border-black md:text-2xl text-xl"> 56px
+                    = <span class="font-bold">mt-14</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-16 border-2 border-black md:text-2xl text-xl"> 64px
+                    = <span class="font-bold">mt-16</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-20 border-2 border-black md:text-2xl text-xl"> 80px
+                    = <span class="font-bold">mt-20</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-24 border-2 border-black md:text-2xl text-xl"> 96px
+                    = <span class="font-bold">mt-24</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-28 border-2 border-black md:text-2xl text-xl"> 112px
+                    = <span class="font-bold">mt-28</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-32 border-2 border-black md:text-2xl text-xl"> 128px
+                    = <span class="font-bold">mt-32</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-36 border-2 border-black md:text-2xl text-xl"> 144px
+                    = <span class="font-bold">mt-36</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-40 border-2 border-black md:text-2xl text-xl"> 160px
+                    = <span class="font-bold">mt-40</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-44 border-2 border-black md:text-2xl text-xl"> 176px
+                    = <span class="font-bold">mt-44</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-48 border-2 border-black md:text-2xl text-xl"> 192px
+                    = <span class="font-bold">mt-48</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-52 border-2 border-black md:text-2xl text-xl"> 208px
+                    = <span class="font-bold">mt-52</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-56 border-2 border-black md:text-2xl text-xl"> 224px
+                    = <span class="font-bold">mt-56</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-60 border-2 border-black md:text-2xl text-xl"> 240px
+                    = <span class="font-bold">mt-60</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-64 border-2 border-black md:text-2xl text-xl"> 256px
+                    = <span class="font-bold">mt-64</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-72 border-2 border-black md:text-2xl text-xl"> 288px
+                    = <span class="font-bold">mt-72</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-80 border-2 border-black md:text-2xl text-xl"> 320px
+                    = <span class="font-bold">mt-80</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-96 border-2 border-black md:text-2xl text-xl"> 384px
+                    = <span class="font-bold">mt-96</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mt-[50px] border-2 border-black md:text-2xl text-xl">
+                    50px =
+                    <span class="font-bold">mt-[50px]</span>
+                </div>
+
+                <div class="min-h-[50px] text-center bg-blue-300 mt-[5rem] border-2 border-black md:text-2xl text-xl">
+                    80px =
+                    <span class="font-bold">mt-[5rem]</span>
+                </div>
+
+                <div class="min-h-[50px] text-center bg-blue-300 mt-[10%] border-2 border-black md:text-2xl text-xl">
+                    depends on screen size =
+                    <span class="font-bold">mt-[10%]</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <!-- bottom -->
+                <h1>Margin Bottom</h1>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-0 border-2 border-black md:text-2xl text-xl"> 0px =
+                    <span class="font-bold">mb-0</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-0.5 border-2 border-black md:text-2xl text-xl"> 2px
+                    = <span class="font-bold">mb-0.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-1 border-2 border-black md:text-2xl text-xl"> 4px =
+                    <span class="font-bold">mb-1</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-1.5 border-2 border-black md:text-2xl text-xl"> 6px
+                    = <span class="font-bold">mb-1.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-2 border-2 border-black md:text-2xl text-xl"> 8px =
+                    <span class="font-bold">mb-2</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-2.5 border-2 border-black md:text-2xl text-xl"> 10px
+                    = <span class="font-bold">mb-2.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-3 border-2 border-black md:text-2xl text-xl"> 12px =
+                    <span class="font-bold">mb-3</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-3.5 border-2 border-black md:text-2xl text-xl"> 14px
+                    = <span class="font-bold">mb-3.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-4 border-2 border-black md:text-2xl text-xl"> 16px =
+                    <span class="font-bold">mb-4</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-5 border-2 border-black md:text-2xl text-xl"> 20px =
+                    <span class="font-bold">mb-5</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-6 border-2 border-black md:text-2xl text-xl"> 24px =
+                    <span class="font-bold">mb-6</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-7 border-2 border-black md:text-2xl text-xl"> 28px =
+                    <span class="font-bold">mb-7</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-8 border-2 border-black md:text-2xl text-xl"> 32px =
+                    <span class="font-bold">mb-8</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-9 border-2 border-black md:text-2xl text-xl"> 36px =
+                    <span class="font-bold">mb-9</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-10 border-2 border-black md:text-2xl text-xl"> 40px
+                    = <span class="font-bold">mb-10</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-11 border-2 border-black md:text-2xl text-xl"> 44px
+                    = <span class="font-bold">mb-11</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-12 border-2 border-black md:text-2xl text-xl"> 48px
+                    = <span class="font-bold">mb-12</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-14 border-2 border-black md:text-2xl text-xl"> 56px
+                    = <span class="font-bold">mb-14</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-16 border-2 border-black md:text-2xl text-xl"> 64px
+                    = <span class="font-bold">mb-16</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-20 border-2 border-black md:text-2xl text-xl"> 80px
+                    = <span class="font-bold">mb-20</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-24 border-2 border-black md:text-2xl text-xl"> 96px
+                    = <span class="font-bold">mb-24</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-28 border-2 border-black md:text-2xl text-xl"> 112px
+                    = <span class="font-bold">mb-28</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-32 border-2 border-black md:text-2xl text-xl"> 128px
+                    = <span class="font-bold">mb-32</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-36 border-2 border-black md:text-2xl text-xl"> 144px
+                    = <span class="font-bold">mb-36</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-40 border-2 border-black md:text-2xl text-xl"> 160px
+                    = <span class="font-bold">mb-40</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-44 border-2 border-black md:text-2xl text-xl"> 176px
+                    = <span class="font-bold">mb-44</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-48 border-2 border-black md:text-2xl text-xl"> 192px
+                    = <span class="font-bold">mb-48</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-52 border-2 border-black md:text-2xl text-xl"> 208px
+                    = <span class="font-bold">mb-52</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-56 border-2 border-black md:text-2xl text-xl"> 224px
+                    = <span class="font-bold">mb-56</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-60 border-2 border-black md:text-2xl text-xl"> 240px
+                    = <span class="font-bold">mb-60</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-64 border-2 border-black md:text-2xl text-xl"> 256px
+                    = <span class="font-bold">mb-64</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-72 border-2 border-black md:text-2xl text-xl"> 288px
+                    = <span class="font-bold">mb-72</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-80 border-2 border-black md:text-2xl text-xl"> 320px
+                    = <span class="font-bold">mb-80</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mb-96 border-2 border-black md:text-2xl text-xl"> 384px
+                    = <span class="font-bold">mb-96</span></div>
+
+                <div class="min-h-[50px] text-center bg-blue-300 mb-[50px] border-2 border-black md:text-2xl text-xl">
+                    50px =
+                    <span class="font-bold">mb-[50px]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 mb-[5rem] border-2 border-black md:text-2xl text-xl">
+                    80px =
+                    <span class="font-bold">mb-[5rem]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 mb-[10%] border-2 border-black md:text-2xl text-xl">
+                    depends on screen size =
+                    <span class="font-bold">mb-[10%]</span>
+                </div>
+
+            </div>
+
+            <div class="bg-white p-5 my-5 shadow-2xl">
+
+                <h1>Margin Left</h1>
+                <!-- left -->
+                <div class="min-h-[50px] text-center bg-blue-300 ml-0 border-2 border-black md:text-2xl text-xl"> 0px =
+                    <span class="font-bold">ml-0</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-0.5 border-2 border-black md:text-2xl text-xl"> 2px
+                    = <span class="font-bold">ml-0.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-1 border-2 border-black md:text-2xl text-xl"> 4px =
+                    <span class="font-bold">ml-1</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-1.5 border-2 border-black md:text-2xl text-xl"> 6px
+                    = <span class="font-bold">ml-1.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-2 border-2 border-black md:text-2xl text-xl"> 8px =
+                    <span class="font-bold">ml-2</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-2.5 border-2 border-black md:text-2xl text-xl"> 10px
+                    = <span class="font-bold">ml-2.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-3 border-2 border-black md:text-2xl text-xl"> 12px =
+                    <span class="font-bold">ml-3</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-3.5 border-2 border-black md:text-2xl text-xl"> 14px
+                    = <span class="font-bold">ml-3.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-4 border-2 border-black md:text-2xl text-xl"> 16px =
+                    <span class="font-bold">ml-4</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-5 border-2 border-black md:text-2xl text-xl"> 20px =
+                    <span class="font-bold">ml-5</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-6 border-2 border-black md:text-2xl text-xl"> 24px =
+                    <span class="font-bold">ml-6</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-7 border-2 border-black md:text-2xl text-xl"> 28px =
+                    <span class="font-bold">ml-7</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-8 border-2 border-black md:text-2xl text-xl"> 32px =
+                    <span class="font-bold">ml-8</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-9 border-2 border-black md:text-2xl text-xl"> 36px =
+                    <span class="font-bold">ml-9</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-10 border-2 border-black md:text-2xl text-xl"> 40px
+                    = <span class="font-bold">ml-10</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-11 border-2 border-black md:text-2xl text-xl"> 44px
+                    = <span class="font-bold">ml-11</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-12 border-2 border-black md:text-2xl text-xl"> 48px
+                    = <span class="font-bold">ml-12</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-14 border-2 border-black md:text-2xl text-xl"> 56px
+                    = <span class="font-bold">ml-14</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-16 border-2 border-black md:text-2xl text-xl"> 64px
+                    = <span class="font-bold">ml-16</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-20 border-2 border-black md:text-2xl text-xl"> 80px
+                    = <span class="font-bold">ml-20</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-24 border-2 border-black md:text-2xl text-xl"> 96px
+                    = <span class="font-bold">ml-24</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-28 border-2 border-black md:text-2xl text-xl"> 112px
+                    = <span class="font-bold">ml-28</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-32 border-2 border-black md:text-2xl text-xl"> 128px
+                    = <span class="font-bold">ml-32</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-36 border-2 border-black md:text-2xl text-xl"> 144px
+                    = <span class="font-bold">ml-36</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-40 border-2 border-black md:text-2xl text-xl"> 160px
+                    = <span class="font-bold">ml-40</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-44 border-2 border-black md:text-2xl text-xl"> 176px
+                    = <span class="font-bold">ml-44</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-48 border-2 border-black md:text-2xl text-xl"> 192px
+                    = <span class="font-bold">ml-48</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-52 border-2 border-black md:text-2xl text-xl"> 208px
+                    = <span class="font-bold">ml-52</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-56 border-2 border-black md:text-2xl text-xl"> 224px
+                    = <span class="font-bold">ml-56</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-60 border-2 border-black md:text-2xl text-xl"> 240px
+                    = <span class="font-bold">ml-60</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-64 border-2 border-black md:text-2xl text-xl"> 256px
+                    = <span class="font-bold">ml-64</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-72 border-2 border-black md:text-2xl text-xl"> 288px
+                    = <span class="font-bold">ml-72</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-80 border-2 border-black md:text-2xl text-xl"> 320px
+                    = <span class="font-bold">ml-80</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 ml-96 border-2 border-black md:text-2xl text-xl"> 384px
+                    = <span class="font-bold">ml-96</span></div>
+
+                <div class="min-h-[50px] text-center bg-blue-300 ml-[50px] border-2 border-black md:text-2xl text-xl">
+                    50px =
+                    <span class="font-bold">ml-[50px]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 ml-[5rem] border-2 border-black md:text-2xl text-xl">
+                    80px =
+                    <span class="font-bold">ml-[5rem]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 ml-[10%] border-2 border-black md:text-2xl text-xl">
+                    depends on screen size =
+                    <span class="font-bold">ml-[10%]</span>
+                </div>
+
+            </div>
+
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <!-- right -->
+                <h1>Margin Right </h1>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-0 border-2 border-black md:text-2xl text-xl"> 0px =
+                    <span class="font-bold">mr-0</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-0.5 border-2 border-black md:text-2xl text-xl"> 2px
+                    = <span class="font-bold">mr-0.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-1 border-2 border-black md:text-2xl text-xl"> 4px =
+                    <span class="font-bold">mr-1</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-1.5 border-2 border-black md:text-2xl text-xl"> 6px
+                    = <span class="font-bold">mr-1.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-2 border-2 border-black md:text-2xl text-xl"> 8px =
+                    <span class="font-bold">mr-2</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-2.5 border-2 border-black md:text-2xl text-xl"> 10px
+                    = <span class="font-bold">mr-2.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-3 border-2 border-black md:text-2xl text-xl"> 12px =
+                    <span class="font-bold">mr-3</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-3.5 border-2 border-black md:text-2xl text-xl"> 14px
+                    = <span class="font-bold">mr-3.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-4 border-2 border-black md:text-2xl text-xl"> 16px =
+                    <span class="font-bold">mr-4</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-5 border-2 border-black md:text-2xl text-xl"> 20px =
+                    <span class="font-bold">mr-5</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-6 border-2 border-black md:text-2xl text-xl"> 24px =
+                    <span class="font-bold">mr-6</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-7 border-2 border-black md:text-2xl text-xl"> 28px =
+                    <span class="font-bold">mr-7</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-8 border-2 border-black md:text-2xl text-xl"> 32px =
+                    <span class="font-bold">mr-8</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-9 border-2 border-black md:text-2xl text-xl"> 36px =
+                    <span class="font-bold">mr-9</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-10 border-2 border-black md:text-2xl text-xl"> 40px
+                    = <span class="font-bold">mr-10</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-11 border-2 border-black md:text-2xl text-xl"> 44px
+                    = <span class="font-bold">mr-11</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-12 border-2 border-black md:text-2xl text-xl"> 48px
+                    = <span class="font-bold">mr-12</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-14 border-2 border-black md:text-2xl text-xl"> 56px
+                    = <span class="font-bold">mr-14</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-16 border-2 border-black md:text-2xl text-xl"> 64px
+                    = <span class="font-bold">mr-16</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-20 border-2 border-black md:text-2xl text-xl"> 80px
+                    = <span class="font-bold">mr-20</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-24 border-2 border-black md:text-2xl text-xl"> 96px
+                    = <span class="font-bold">mr-24</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-28 border-2 border-black md:text-2xl text-xl"> 112px
+                    = <span class="font-bold">mr-28</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-32 border-2 border-black md:text-2xl text-xl"> 128px
+                    = <span class="font-bold">mr-32</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-36 border-2 border-black md:text-2xl text-xl"> 144px
+                    = <span class="font-bold">mr-36</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-40 border-2 border-black md:text-2xl text-xl"> 160px
+                    = <span class="font-bold">mr-40</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-44 border-2 border-black md:text-2xl text-xl"> 176px
+                    = <span class="font-bold">mr-44</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-48 border-2 border-black md:text-2xl text-xl"> 192px
+                    = <span class="font-bold">mr-48</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-52 border-2 border-black md:text-2xl text-xl"> 208px
+                    = <span class="font-bold">mr-52</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-56 border-2 border-black md:text-2xl text-xl"> 224px
+                    = <span class="font-bold">mr-56</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-60 border-2 border-black md:text-2xl text-xl"> 240px
+                    = <span class="font-bold">mr-60</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-64 border-2 border-black md:text-2xl text-xl"> 256px
+                    = <span class="font-bold">mr-64</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-72 border-2 border-black md:text-2xl text-xl"> 288px
+                    = <span class="font-bold">mr-72</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-80 border-2 border-black md:text-2xl text-xl"> 320px
+                    = <span class="font-bold">mr-80</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mr-96 border-2 border-black md:text-2xl text-xl"> 384px
+                    = <span class="font-bold">mr-96</span></div>
+
+                <div class="min-h-[50px] text-center bg-blue-300 mr-[50px] border-2 border-black md:text-2xl text-xl">
+                    50px =
+                    <span class="font-bold">mr-[50px]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 mr-[5rem] border-2 border-black md:text-2xl text-xl">
+                    80px =
+                    <span class="font-bold">mr-[5rem]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 mr-[10%] border-2 border-black md:text-2xl text-xl">
+                    depends on screen size =
+                    <span class="font-bold">mr-[10%]</span>
+                </div>
+
+            </div>
+
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <!-- right -->
+                <h1>Margin Left Right </h1>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-0 border-2 border-black md:text-2xl text-xl"> 0px =
+                    <span class="font-bold">mx-0</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-0.5 border-2 border-black md:text-2xl text-xl"> 2px
+                    = <span class="font-bold">mx-0.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-1 border-2 border-black md:text-2xl text-xl"> 4px =
+                    <span class="font-bold">mx-1</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-1.5 border-2 border-black md:text-2xl text-xl"> 6px
+                    = <span class="font-bold">mx-1.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-2 border-2 border-black md:text-2xl text-xl"> 8px =
+                    <span class="font-bold">mx-2</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-2.5 border-2 border-black md:text-2xl text-xl"> 10px
+                    = <span class="font-bold">mx-2.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-3 border-2 border-black md:text-2xl text-xl"> 12px =
+                    <span class="font-bold">mx-3</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-3.5 border-2 border-black md:text-2xl text-xl"> 14px
+                    = <span class="font-bold">mx-3.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-4 border-2 border-black md:text-2xl text-xl"> 16px =
+                    <span class="font-bold">mx-4</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-5 border-2 border-black md:text-2xl text-xl"> 20px =
+                    <span class="font-bold">mx-5</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-6 border-2 border-black md:text-2xl text-xl"> 24px =
+                    <span class="font-bold">mx-6</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-7 border-2 border-black md:text-2xl text-xl"> 28px =
+                    <span class="font-bold">mx-7</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-8 border-2 border-black md:text-2xl text-xl"> 32px =
+                    <span class="font-bold">mx-8</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-9 border-2 border-black md:text-2xl text-xl"> 36px =
+                    <span class="font-bold">mx-9</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-10 border-2 border-black md:text-2xl text-xl"> 40px
+                    = <span class="font-bold">mx-10</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-11 border-2 border-black md:text-2xl text-xl"> 44px
+                    = <span class="font-bold">mx-11</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-12 border-2 border-black md:text-2xl text-xl"> 48px
+                    = <span class="font-bold">mx-12</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-14 border-2 border-black md:text-2xl text-xl"> 56px
+                    = <span class="font-bold">mx-14</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-16 border-2 border-black md:text-2xl text-xl"> 64px
+                    = <span class="font-bold">mx-16</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-20 border-2 border-black md:text-2xl text-xl"> 80px
+                    = <span class="font-bold">mx-20</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-24 border-2 border-black md:text-2xl text-xl"> 96px
+                    = <span class="font-bold">mx-24</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-28 border-2 border-black md:text-2xl text-xl"> 112px
+                    = <span class="font-bold">mx-28</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-32 border-2 border-black md:text-2xl text-xl"> 128px
+                    = <span class="font-bold">mx-32</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-36 border-2 border-black md:text-2xl text-xl"> 144px
+                    = <span class="font-bold">mx-36</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-40 border-2 border-black md:text-2xl text-xl"> 160px
+                    = <span class="font-bold">mx-40</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-44 border-2 border-black md:text-2xl text-xl"> 176px
+                    = <span class="font-bold">mx-44</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-48 border-2 border-black md:text-2xl text-xl"> 192px
+                    = <span class="font-bold">mx-48</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-52 border-2 border-black md:text-2xl text-xl"> 208px
+                    = <span class="font-bold">mx-52</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-56 border-2 border-black md:text-2xl text-xl"> 224px
+                    = <span class="font-bold">mx-56</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-60 border-2 border-black md:text-2xl text-xl"> 240px
+                    = <span class="font-bold">mx-60</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-64 border-2 border-black md:text-2xl text-xl"> 256px
+                    = <span class="font-bold">mx-64</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-72 border-2 border-black md:text-2xl text-xl"> 288px
+                    = <span class="font-bold">mx-72</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-80 border-2 border-black md:text-2xl text-xl"> 320px
+                    = <span class="font-bold">mx-80</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-96 border-2 border-black md:text-2xl text-xl"> 384px
+                    = <span class="font-bold">mx-96</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 mx-[50px] border-2 border-black md:text-2xl text-xl">
+                    50px =
+                    <span class="font-bold">mx-[50px]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 mx-[5rem] border-2 border-black md:text-2xl text-xl">
+                    80px =
+                    <span class="font-bold">mx-[5rem]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 mx-[10%] border-2 border-black md:text-2xl text-xl">
+                    depends on screen size =
+                    <span class="font-bold">mx-[10%]</span>
+                </div>
+
+            </div>
+
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <!-- right -->
+                <h1>Margin Left Right </h1>
+                <div class="min-h-[50px] text-center bg-blue-300 my-0 border-2 border-black md:text-2xl text-xl"> 0px =
+                    <span class="font-bold">my-0</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-0.5 border-2 border-black md:text-2xl text-xl"> 2px
+                    = <span class="font-bold">my-0.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-1 border-2 border-black md:text-2xl text-xl"> 4px =
+                    <span class="font-bold">my-1</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-1.5 border-2 border-black md:text-2xl text-xl"> 6px
+                    = <span class="font-bold">my-1.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-2 border-2 border-black md:text-2xl text-xl"> 8px =
+                    <span class="font-bold">my-2</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-2.5 border-2 border-black md:text-2xl text-xl"> 10px
+                    = <span class="font-bold">my-2.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-3 border-2 border-black md:text-2xl text-xl"> 12px =
+                    <span class="font-bold">my-3</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-3.5 border-2 border-black md:text-2xl text-xl"> 14px
+                    = <span class="font-bold">my-3.5</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-4 border-2 border-black md:text-2xl text-xl"> 16px =
+                    <span class="font-bold">my-4</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-5 border-2 border-black md:text-2xl text-xl"> 20px =
+                    <span class="font-bold">my-5</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-6 border-2 border-black md:text-2xl text-xl"> 24px =
+                    <span class="font-bold">my-6</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-7 border-2 border-black md:text-2xl text-xl"> 28px =
+                    <span class="font-bold">my-7</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-8 border-2 border-black md:text-2xl text-xl"> 32px =
+                    <span class="font-bold">my-8</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-9 border-2 border-black md:text-2xl text-xl"> 36px =
+                    <span class="font-bold">my-9</span>
+                </div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-10 border-2 border-black md:text-2xl text-xl"> 40px
+                    = <span class="font-bold">my-10</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-11 border-2 border-black md:text-2xl text-xl"> 44px
+                    = <span class="font-bold">my-11</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-12 border-2 border-black md:text-2xl text-xl"> 48px
+                    = <span class="font-bold">my-12</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-14 border-2 border-black md:text-2xl text-xl"> 56px
+                    = <span class="font-bold">my-14</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-16 border-2 border-black md:text-2xl text-xl"> 64px
+                    = <span class="font-bold">my-16</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-20 border-2 border-black md:text-2xl text-xl"> 80px
+                    = <span class="font-bold">my-20</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-24 border-2 border-black md:text-2xl text-xl"> 96px
+                    = <span class="font-bold">my-24</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-28 border-2 border-black md:text-2xl text-xl"> 112px
+                    = <span class="font-bold">my-28</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-32 border-2 border-black md:text-2xl text-xl"> 128px
+                    = <span class="font-bold">my-32</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-36 border-2 border-black md:text-2xl text-xl"> 144px
+                    = <span class="font-bold">my-36</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-40 border-2 border-black md:text-2xl text-xl"> 160px
+                    = <span class="font-bold">my-40</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-44 border-2 border-black md:text-2xl text-xl"> 176px
+                    = <span class="font-bold">my-44</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-48 border-2 border-black md:text-2xl text-xl"> 192px
+                    = <span class="font-bold">my-48</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-52 border-2 border-black md:text-2xl text-xl"> 208px
+                    = <span class="font-bold">my-52</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-56 border-2 border-black md:text-2xl text-xl"> 224px
+                    = <span class="font-bold">my-56</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-60 border-2 border-black md:text-2xl text-xl"> 240px
+                    = <span class="font-bold">my-60</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-64 border-2 border-black md:text-2xl text-xl"> 256px
+                    = <span class="font-bold">my-64</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-72 border-2 border-black md:text-2xl text-xl"> 288px
+                    = <span class="font-bold">my-72</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-80 border-2 border-black md:text-2xl text-xl"> 320px
+                    = <span class="font-bold">my-80</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-96 border-2 border-black md:text-2xl text-xl"> 384px
+                    = <span class="font-bold">my-96</span></div>
+                <div class="min-h-[50px] text-center bg-blue-300 my-[50px] border-2 border-black md:text-2xl text-xl">
+                    50px =
+                    <span class="font-bold">my-[50px]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 my-[5rem] border-2 border-black md:text-2xl text-xl">
+                    80px =
+                    <span class="font-bold">my-[5rem]</span>
+                </div>
+
+
+                <div class="min-h-[50px] text-center bg-blue-300 my-[10%] border-2 border-black md:text-2xl text-xl">
+                    depends on screen size =
+                    <span class="font-bold">my-[10%]</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

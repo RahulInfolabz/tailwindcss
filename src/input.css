@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  font-weight: 600 !important;
+}
+code {
+  font-family: "Courier New", Courier, monospace;
+}

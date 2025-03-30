@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Introduction</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="font-mono">
+    <div class="grid lg:grid-cols-[17%_auto] h-[100vh] overflow-x-hidden">
+        <!-- Sidebar -->
+        <div class="bg-blue-700 min-h-[100vh] overflow-y-scroll text-white font-serif hidden lg:block">
+            <div class="logo pt-5 font-mono text-center">
+                <h1 class="text-2xl font-bold">Tailwind CSS Cheatsheet</h1>
+            </div>
+            <hr class="bg-black mt-3">
+            <ul class="p-5 font-mono">
+                <li class="text-[18px]"><a href="index.html">Introduction</a></li>
+                <li class="text-[18px]"><a href="utility.html">Utility</a></li>
+                <li class="text-[18px]"><a href="width.html">Width</a></li>
+                <li class="text-[18px]"><a href="height.html">Height</a></li>
+                <li class="text-[18px]"><a href="margin.html">Margin</a></li>
+                <li class="text-[18px]"><a href="padding.html">Padding</a></li>
+                <li class="text-[18px]"><a href="maxwidth.html">Max Width</a></li>
+                <li class="text-[18px]"><a href="minwidth.html">Min Width</a></li>
+                <li class="text-[18px]"><a href="maxheight.html">Max Height</a></li>
+                <li class="text-[18px]"><a href="screens.html">Screens</a></li>
+                <li class="text-[18px]"><a href="Gridsystem.html">Grid System</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="min-h-[100vh] p-5 overflow-y-scroll">
+            <h1 class="md:text-4xl text-2xl font-bold text-blue-700 mb-4">Introduction to Tailwind CSS</h1>
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <p class="text-xl mb-4">
+                    Tailwind CSS is a highly customizable, utility-first CSS framework that provides low-level utility
+                    classes
+                    to build modern and responsive web interfaces. It allows developers to create designs directly in
+                    the
+                    HTML by composing classes.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-gray-700 mb-3">What is Tailwind CSS?</h2>
+                <p class="text-lg mb-4">
+                    Tailwind CSS is a framework that simplifies web development by providing a collection of utility
+                    classes.
+                    These classes allow you to style elements directly in your HTML code, eliminating the need for
+                    custom
+                    CSS
+                    in many cases.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-gray-700 mb-3">Why Use Tailwind CSS?</h2>
+                <ul class="list-disc pl-5 mb-4">
+                    <li>Highly customizable and flexible.</li>
+                    <li>Reduces the need for writing custom CSS files.</li>
+                    <li>Speeds up development with pre-built utility classes.</li>
+                    <li>Responsive design is built-in and easy to implement.</li>
+                    <li>Allows for a consistent design system across the project.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-gray-700 mb-3">Ways to Implement Tailwind CSS</h2>
+                <p class="text-lg mb-4">
+                    There are multiple ways to implement Tailwind CSS in your project:
+                </p>
+                <ol class="list-decimal pl-5 mb-4">
+                    <li><strong>Using CDN:</strong> Add the Tailwind CSS CDN link directly into your HTML file for quick
+                        prototyping.</li>
+                    <li><strong>Installing via npm:</strong> Install Tailwind CSS in your project using npm for
+                        production-ready applications.</li>
+                    <li><strong>Using a Framework:</strong> Integrate Tailwind CSS with frameworks like React, Vue, or
+                        Angular.</li>
+                </ol>
+
+                <h2 class="text-2xl font-semibold text-gray-700 mb-3">Getting Started with Tailwind CSS</h2>
+                <p class="text-lg mb-4">
+                    To get started with Tailwind CSS, follow these steps:
+                </p>
+                <ol class="list-decimal pl-5 mb-4">
+                    <li>Install Tailwind CSS via npm: <code
+                            class="bg-gray-100 px-2 py-1 rounded">npm install tailwindcss</code></li>
+                    <li>Set up your Tailwind configuration file using <code>npx tailwindcss init</code>.</li>
+                    <li>Add Tailwind's directives to your CSS file:
+                        <code>@tailwind base; @tailwind components; @tailwind utilities;</code>
+                    </li>
+                    <li>Build your project with a tool like PostCSS or Vite.</li>
+                </ol>
+
+                <h2 class="text-2xl font-semibold text-gray-700 mb-3">Example Usage</h2>
+                <p class="text-lg mb-4">
+                    Here's a simple example of a Tailwind CSS button:
+                </p>
+                <pre class="bg-gray-100 p-4 rounded">
+<code>&lt;button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"&gt;
+    Click Me
+&lt;/button&gt;</code>
+            </pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Introduction</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="font-mono">
+    <div class="grid lg:grid-cols-[17%_auto] h-[100vh] overflow-x-hidden">
+        <!-- Sidebar -->
+        <div class="bg-blue-700 min-h-[100vh] overflow-y-scroll text-white font-serif hidden lg:block">
+            <div class="logo pt-5 font-mono text-center">
+                <h1 class="text-2xl font-bold">Tailwind CSS Cheatsheet</h1>
+            </div>
+            <hr class="bg-black mt-3">
+                        <ul class="p-5 font-mono">
+                <li class="text-[18px]"><a href="index.html">Introduction</a></li>
+                <li class="text-[18px]"><a href="utility.html">Utility</a></li>
+                <li class="text-[18px]"><a href="width.html">Width</a></li>
+                <li class="text-[18px]"><a href="height.html">Height</a></li>
+                <li class="text-[18px]"><a href="margin.html">Margin</a></li>
+                <li class="text-[18px]"><a href="padding.html">Padding</a></li>
+                <li class="text-[18px]"><a href="maxwidth.html">Max Width</a></li>
+                <li class="text-[18px]"><a href="minwidth.html">Min Width</a></li>
+                <li class="text-[18px]"><a href="maxheight.html">Max Height</a></li>
+                
+                <li class="text-[18px]"><a href="screens.html">Screens</a></li>
+                <li class="text-[18px]"><a href="Gridsystem.html">Grid System</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="min-h-[100vh] p-5 overflow-y-scroll">
+            <h1 class="md:text-4xl text-2xl font-bold text-blue-700 mb-4">Tailwind CSS Screens</h1>
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <div class="mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-3">What are screens in Tailwind CSS?</h2>
+                    <p class="md:text-xl mb-4">
+                        In Tailwind CSS, screens are used to define breakpoints for responsive design. These breakpoints
+                        allow you to apply styles conditionally based on the width of the viewport.
+                    </p>
+                    <p class="md:text-xl">
+                        The screens property in Tailwind's configuration is where these breakpoints are defined.
+                        Tailwind
+                        CSS provides default breakpoints that can be customized as needed in the tailwind.config.js
+                        file.
+                    </p>
+
+                </div>
+
+                <div class="my-12">
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-3">Why Use Screens In Tailwind CSS?</h2>
+                    <ul class="list-disc pl-5 mb-4 md:text-xl ">
+                        <li>Define responsive styles for varying screen sizes.</li>
+                        <li>Use mobile-first design as the default approach.</li>
+                        <li>Apply conditional styling with responsive prefixes (e.g., sm:, md:).</li>
+                        <li>Simplify media queries using Tailwind's screen utilities.</li>
+                        <li>Adjust layouts dynamically with grid and flexbox utilities.</li>
+                        <li>Customize spacing with responsive padding, margins, and gaps.</li>
+                    </ul>
+                </div>
+                <div class="my-12">
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-3">Default Screen Sizes in Tailwind CSS</h2>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full table-auto border-collapse border border-gray-300">
+                            <thead>
+                                <tr class="bg-gray-200 text-left">
+                                    <th class="border border-gray-300 px-4 py-2">Breakpoint</th>
+                                    <th class="border border-gray-300 px-4 py-2">Prefix</th>
+                                    <th class="border border-gray-300 px-4 py-2">Min Width (px)</th>
+                                    <th class="border border-gray-300 px-4 py-2">Max Width (px)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="border border-gray-300 px-4 py-2">sm</td>
+                                    <td class="border border-gray-300 px-4 py-2">sm</td>
+                                    <td class="border border-gray-300 px-4 py-2">640px</td>
+                                    <td class="border border-gray-300 px-4 py-2">767px</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="border border-gray-300 px-4 py-2">md</td>
+                                    <td class="border border-gray-300 px-4 py-2">md</td>
+                                    <td class="border border-gray-300 px-4 py-2">768px</td>
+                                    <td class="border border-gray-300 px-4 py-2">1023px</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="border border-gray-300 px-4 py-2">lg</td>
+                                    <td class="border border-gray-300 px-4 py-2">lg</td>
+                                    <td class="border border-gray-300 px-4 py-2">1024px</td>
+                                    <td class="border border-gray-300 px-4 py-2">1279px</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="border border-gray-300 px-4 py-2">xl</td>
+                                    <td class="border border-gray-300 px-4 py-2">xl</td>
+                                    <td class="border border-gray-300 px-4 py-2">1280px</td>
+                                    <td class="border border-gray-300 px-4 py-2">1535px</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="border border-gray-300 px-4 py-2">2xl</td>
+                                    <td class="border border-gray-300 px-4 py-2">2xl</td>
+                                    <td class="border border-gray-300 px-4 py-2">1536px</td>
+                                    <td class="border border-gray-300 px-4 py-2">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="overflow-x-auto my-10">
+                        <pre>
+<code>
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    theme: {
+    screens: {
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+    }
+  }
+}
+</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 my-5 shadow-2xl">
+                <h1 class="text-3xl font-bold mb-6">Customizing Screens</h1>
+                <div class="mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-3">What are Custom screens in Tailwind CSS?</h2>
+                    <p class="md:text-xl mb-4">Customizing the default breakpoints for your project.</p>
+                    <p class="md:text-xl">
+                        Configuring custom screens
+                        You define your project’s breakpoints in the theme.screens section of your tailwind.config.js
+                        file. The keys become your responsive modifiers (like md:text-center), and the values are the
+                        min-width where that breakpoint should start.
+
+                    </p>
+
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full table-auto border-collapse border border-gray-300">
+                        <thead>
+                            <tr class="bg-gray-200 text-left">
+                                <th class="border border-gray-300 px-4 py-2">Breakpoint</th>
+                                <th class="border border-gray-300 px-4 py-2">Prefix</th>
+                                <th class="border border-gray-300 px-4 py-2">Min Width (px)</th>
+                                <th class="border border-gray-300 px-4 py-2">Max Width (px)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-100">
+                                <td class="border border-gray-300 px-4 py-2">xs</td>
+                                <td class="border border-gray-300 px-4 py-2">xs</td>
+                                <td class="border border-gray-300 px-4 py-2">300px</td>
+                                <td class="border border-gray-300 px-4 py-2">576px</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="border border-gray-300 px-4 py-2">sm</td>
+                                <td class="border border-gray-300 px-4 py-2">sm</td>
+                                <td class="border border-gray-300 px-4 py-2">576px</td>
+                                <td class="border border-gray-300 px-4 py-2">767px</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="border border-gray-300 px-4 py-2">md</td>
+                                <td class="border border-gray-300 px-4 py-2">md</td>
+                                <td class="border border-gray-300 px-4 py-2">768px</td>
+                                <td class="border border-gray-300 px-4 py-2">991px</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="border border-gray-300 px-4 py-2">lg</td>
+                                <td class="border border-gray-300 px-4 py-2">lg</td>
+                                <td class="border border-gray-300 px-4 py-2">991px</td>
+                                <td class="border border-gray-300 px-4 py-2">1279px</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="border border-gray-300 px-4 py-2">xl</td>
+                                <td class="border border-gray-300 px-4 py-2">xl</td>
+                                <td class="border border-gray-300 px-4 py-2">1280px</td>
+                                <td class="border border-gray-300 px-4 py-2">1535px</td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="border border-gray-300 px-4 py-2">2xl</td>
+                                <td class="border border-gray-300 px-4 py-2">2xl</td>
+                                <td class="border border-gray-300 px-4 py-2">1536px</td>
+                                <td class="border border-gray-300 px-4 py-2">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="overflow-x-auto mt-10">
+                    <pre>
+<code>
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+theme: {
+screens: {
+    'xs': '300px',
+    // => @media (min-width: 300px) { ... }
+
+    'sm': '576px',
+    // => @media (min-width: 576px) { ... }
+
+    'md': '768px',
+    // => @media (min-width: 768px) { ... }
+
+    'lg': '992px',
+    // => @media (min-width: 992px) { ... }
+
+    'xl': '1280px',
+    // => @media (min-width: 1280px) { ... }
+
+    '2xl': '1535px',
+    // => @media (min-width: 1535px) { ... }
+    }
+  }
+}
+</code>
+</pre>
+                </div>
+
+
+                <!-- example of screens  -->
+                <div class="overflow-x-auto px-6 mt-10">
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-3">Example Use Of Screens ?</h2>
+                    <h3>Code :</h3>
+                    <pre>
+<code>
+&lt;div class="overflow-x-auto px-6 mt-10"&gt;
+    &lt;h2 class="text-2xl font-semibold text-gray-700 mb-3"&gt;Example Use Of Screens ?&lt;/h2&gt;
+    &lt;div class="bg-yellow-100 sm:bg-purple-300 md:bg-red-500 lg:bg-pink-500 text-center min-h-[300px] w-[300px] rounded-full my-20 mx-auto grid place-content-center"&gt;
+        &lt;h1&gt;Circle Shape&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h3 class="mt-5">Output:</h3>
+                    <div
+                        class="text-center   lg:bg-pink-500 md:bg-red-500 sm:bg-purple-300 bg-yellow-100 min-h-[300px] w-[300px] rounded-full my-20 mx-auto grid place-content-center">
+                        <h1>Circle Shape</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
